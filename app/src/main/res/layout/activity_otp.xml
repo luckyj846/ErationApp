@@ -12,11 +12,8 @@
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="-2dp"
         android:text="Enter Your"
@@ -28,10 +25,7 @@
         android:id="@+id/textview9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="-2dp"
         android:layout_marginTop="55dp"
         android:text="Verification Code"
         android:textAlignment="center"
@@ -40,10 +34,9 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="101dp"
         android:text="We Sent a Verification Code To Your Mail"
         android:textAlignment="center"
@@ -51,10 +44,9 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="148dp"
         app:srcCompat="@drawable/third" />
 
@@ -116,10 +108,9 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="147dp"
         android:textAlignment="center"
         android:textColor="#0C0C0C"
@@ -127,12 +118,9 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="102dp"
         android:layout_marginBottom="115dp"
         android:text="Didn't Receive An OTP?"
         android:textAlignment="center"
@@ -140,19 +128,19 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="81dp"
         android:text="Resend OTP?"
+        android:textAlignment="center"
         android:textColor="#1542F6"
         android:textSize="25dp" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
@@ -160,6 +148,7 @@
         android:backgroundTint="#1565C0"
         android:text="verify"
         android:textAlignment="center"
+        android:textSize="30dp"
         android:textColor="@android:color/background_light" />
 
 

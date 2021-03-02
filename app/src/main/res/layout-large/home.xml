@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E2DEF3E4"
-    tools:context=".Home">
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="115dp"
         app:srcCompat="@drawable/logo" />
 
     <TextView
@@ -20,11 +20,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="189dp"
+        android:layout_marginBottom="221dp"
         android:text="E Ration Shop"
         android:textAlignment="center"
         android:textColor="#1542F6"
-        android:textSize="35dp" />
+        android:textSize="55dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -32,34 +32,33 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerVertical="true"
-        android:layout_marginBottom="147dp"
+        android:layout_marginBottom="176dp"
         android:text="Shop online and get groceries"
         android:textAlignment="center"
-        android:textSize="20dp" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="113dp"
+        android:layout_marginBottom="136dp"
         android:text="delivered from store to your home."
         android:textAlignment="center"
-        android:textSize="20dp" />
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="41dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/buttonshape"
-        android:textAlignment="center"
         android:backgroundTint="#1565C0"
         android:text="Next"
-        android:textSize="30dp"
+        android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        />
+        android:textSize="40dp" />
 
 </RelativeLayout>
