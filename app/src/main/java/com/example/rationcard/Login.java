@@ -14,6 +14,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
 public class Login extends AppCompatActivity {
 
     EditText et1;
@@ -44,13 +51,28 @@ public class Login extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(et1.getText().toString()))
                 {
-                    Toast.makeText(Login.this, "Enter Ration No", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "Enter Ration Card No", Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
-                    Toast.makeText(Login.this,et1.getText().toString(), Toast.LENGTH_SHORT).show();
+                   /* Toast.makeText(Login.this,et1.getText().toString(), Toast.LENGTH_SHORT).show();
                     Intent i1 = new Intent(Login.this,Otp.class);
-                    startActivity(i1);
+                    startActivity(i1);*/
+                   String text = et1.getText().toString();
+                    StringRequest request = new StringRequest(Request.Method.GET, "http://13.233.150.190:8080/api/ration/get/getByRation/" + text, new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT).show();
+
+                        }
+                    }, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
+                    queue.add(request);
                 }
 
             }
